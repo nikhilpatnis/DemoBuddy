@@ -1,39 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74457" started-at="2016-06-28T15:26:26Z" finished-at="2016-06-28T15:27:40Z">
+  <suite name="Default suite" duration-ms="19323" started-at="2016-06-29T11:43:12Z" finished-at="2016-06-29T11:43:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74457" started-at="2016-06-28T15:26:26Z" finished-at="2016-06-28T15:27:40Z">
+    <test name="Default test" duration-ms="19323" started-at="2016-06-29T11:43:12Z" finished-at="2016-06-29T11:43:31Z">
       <class name="tests.DemoTest">
-        <test-method status="PASS" signature="openFireFox()[pri:0, instance:tests.DemoTest@2a5ca609]" name="openFireFox" is-config="true" duration-ms="31637" started-at="2016-06-28T20:56:26Z" finished-at="2016-06-28T20:56:57Z">
+        <test-method status="PASS" signature="openFireFox()[pri:0, instance:tests.DemoTest@7823a2f9]" name="openFireFox" is-config="true" duration-ms="9829" started-at="2016-06-29T17:13:12Z" finished-at="2016-06-29T17:13:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFireFox -->
-        <test-method status="PASS" signature="LoginTest()[pri:0, instance:tests.DemoTest@2a5ca609]" name="LoginTest" duration-ms="9247" started-at="2016-06-28T20:56:57Z" description="simple login" finished-at="2016-06-28T20:57:07Z">
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:tests.DemoTest@7823a2f9]" name="LoginTest" duration-ms="484" started-at="2016-06-29T17:13:22Z" description="simple login" finished-at="2016-06-29T17:13:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="FAIL" signature="OpenAndEditProfilePage()[pri:0, instance:tests.DemoTest@2a5ca609]" name="OpenAndEditProfilePage" duration-ms="33544" started-at="2016-06-28T20:57:07Z" finished-at="2016-06-28T20:57:40Z">
+        <test-method status="PASS" signature="OpenProfilePage()[pri:0, instance:tests.DemoTest@7823a2f9]" name="OpenProfilePage" duration-ms="1334" started-at="2016-06-29T17:13:22Z" description="Open profile page" finished-at="2016-06-29T17:13:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenProfilePage -->
+        <test-method status="PASS" signature="fillSection1()[pri:0, instance:tests.DemoTest@7823a2f9]" name="fillSection1" duration-ms="2754" started-at="2016-06-29T17:13:23Z" description="who are you?" finished-at="2016-06-29T17:13:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillSection1 -->
+        <test-method status="PASS" signature="fillSection2()[pri:0, instance:tests.DemoTest@7823a2f9]" name="fillSection2" duration-ms="966" started-at="2016-06-29T17:13:26Z" description="where are you studying?" finished-at="2016-06-29T17:13:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillSection2 -->
+        <test-method status="PASS" signature="fillSection3()[pri:0, instance:tests.DemoTest@7823a2f9]" name="fillSection3" duration-ms="561" started-at="2016-06-29T17:13:27Z" description="A few more details about you" finished-at="2016-06-29T17:13:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillSection3 -->
+        <test-method status="PASS" signature="fillSection4()[pri:0, instance:tests.DemoTest@7823a2f9]" name="fillSection4" duration-ms="585" started-at="2016-06-29T17:13:28Z" description="Where do you stay" finished-at="2016-06-29T17:13:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillSection4 -->
+        <test-method status="PASS" signature="fillSection5()[pri:0, instance:tests.DemoTest@7823a2f9]" name="fillSection5" duration-ms="476" started-at="2016-06-29T17:13:28Z" description="Details about your family" finished-at="2016-06-29T17:13:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillSection5 -->
+        <test-method status="FAIL" signature="fillSection6()[pri:0, instance:tests.DemoTest@7823a2f9]" name="fillSection6" duration-ms="2297" started-at="2016-06-29T17:13:29Z" description="How well are you connected" finished-at="2016-06-29T17:13:31Z">
           <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
-              <![CDATA[Element is not currently visible and so may not be interacted with
-Command duration or timeout: 32.44 seconds
+              <![CDATA[element not visible
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'BLACKBUCK', ip: '192.168.2.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b23580d0-8f1e-4bb3-9504-3b224ca7c931]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\nikhil\AppData\Local\Temp\scoped_dir45020_25722}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3109e33786f0f99c889ebcd389918710]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 32.44 seconds
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'BLACKBUCK', ip: '192.168.2.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b23580d0-8f1e-4bb3-9504-3b224ca7c931
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\nikhil\AppData\Local\Temp\scoped_dir45020_25722}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3109e33786f0f99c889ebcd389918710
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -43,8 +71,8 @@ Session ID: b23580d0-8f1e-4bb3-9504-3b224ca7c931
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at web.WebPage.clickOnStartButton(WebPage.java:95)
-	at tests.DemoTest.OpenAndEditProfilePage(DemoTest.java:68)
+	at web.ProfilePage.proceedAndSubmit6(ProfilePage.java:154)
+	at tests.DemoTest.fillSection6(DemoTest.java:182)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,21 +98,13 @@ Session ID: b23580d0-8f1e-4bb3-9504-3b224ca7c931
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'BLACKBUCK', ip: '192.168.2.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/nikhil/AppData/Local/Temp/anonymous8473891717708053383webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
-	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/nikhil/AppData/Local/Temp/anonymous8473891717708053383webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/nikhil/AppData/Local/Temp/anonymous8473891717708053383webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/nikhil/AppData/Local/Temp/anonymous8473891717708053383webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenAndEditProfilePage -->
-        <test-method status="PASS" signature="closeFireFox()[pri:0, instance:tests.DemoTest@2a5ca609]" name="closeFireFox" is-config="true" duration-ms="0" started-at="2016-06-28T20:57:40Z" finished-at="2016-06-28T20:57:40Z">
+        </test-method> <!-- fillSection6 -->
+        <test-method status="PASS" signature="closeFireFox()[pri:0, instance:tests.DemoTest@7823a2f9]" name="closeFireFox" is-config="true" duration-ms="0" started-at="2016-06-29T17:13:31Z" finished-at="2016-06-29T17:13:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeFireFox -->

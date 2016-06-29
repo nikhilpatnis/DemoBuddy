@@ -5,8 +5,8 @@
     <classes>
       <class name="tests.DemoTest">
         <methods>
-          <include name="OpenAndEditProfilePage"/>
           <include name="closeFireFox"/>
+          <include name="fillSection6"/>
           <include name="openFireFox"/>
         </methods>
       </class> <!-- tests.DemoTest -->
